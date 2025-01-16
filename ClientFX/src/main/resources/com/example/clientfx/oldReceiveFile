@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<?import javafx.scene.control.cell.PropertyValueFactory?>
+<VBox xmlns="http://javafx.com/javafx" xmlns:fx="http://javafx.com/fxml"
+      fx:controller="com.chensan.client.viewFX.FileReceiveController"
+      style="-fx-background-color: #2f3136; -fx-padding: 10;" stylesheets="@style.css">
+    <HBox spacing="10">
+        <TableView fx:id="fileTable" style="-fx-background-color: #2f3136; -fx-border-color: #36393f;">
+            <columns>
+                <TableColumn text="发送者" prefWidth="100">
+                    <cellValueFactory>
+                        <PropertyValueFactory property="sender"/>
+                    </cellValueFactory>
+                </TableColumn>
+                <TableColumn text="文件名称" prefWidth="150">
+                    <cellValueFactory>
+                        <PropertyValueFactory property="content"/>
+                    </cellValueFactory>
+                </TableColumn>
+                <TableColumn text="发送时间" prefWidth="100">
+                    <cellValueFactory>
+                        <PropertyValueFactory property="sendTime"/>
+                    </cellValueFactory>
+                </TableColumn>
+            </columns>
+        </TableView>
+        <VBox alignment="CENTER" spacing="10">
+            <Button text="接收" onAction="#handleAccept" styleClass="nav-button"/>
+            <Button text="全部接收" onAction="#handleAcceptAll" styleClass="nav-button"/>
+            <Button text="拒收" onAction="#handleReject" styleClass="nav-button"/>
+            <Button text="全部拒收" onAction="#handleRejectAll" styleClass="nav-button"/>
+        </VBox>
+    </HBox>
+</VBox>

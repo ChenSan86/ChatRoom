@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<VBox xmlns="http://javafx.com/javafx" xmlns:fx="http://javafx.com/fxml" fx:controller="com.chensan.server.wechatframe.LoginController"
+      spacing="10" alignment="CENTER" stylesheets="@style.css">
+    <Label text="登录" styleClass="header-label"/>
+    <TextField fx:id="idField" promptText="请输入账号"/>
+    <PasswordField fx:id="pwdField" promptText="请输入密码"/>
+    <Label fx:id="errorLabel" styleClass="error-label"/>
+    <HBox spacing="10" alignment="CENTER">
+        <Button text="登录" onAction="#handleLogin"/>
+    </HBox>
+</VBox>

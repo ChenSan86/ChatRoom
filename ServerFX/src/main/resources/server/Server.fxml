@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<SplitPane xmlns="http://javafx.com/javafx" xmlns:fx="http://javafx.com/fxml"
+           fx:controller="com.chensan.server.wechatframe.ServerController" stylesheets="@style.css"
+           dividerPositions="0.1, 0.35">
+    <VBox spacing="20" alignment="CENTER" style="-fx-background-color: #2f3136; -fx-padding: 10;">
+        <Button text="关闭服务器" onAction="#closeServer" styleClass="nav-button"/>
+        <Button text="强制用户退出" onAction="#forcedExit" styleClass="nav-button"/>
+        <Button text="删除用户" onAction="#deleteUser" styleClass="nav-button"/>
+        <Button text="退出登录" onAction="#logout" styleClass="nav-button"/>
+        <Button text="刷新" onAction="#refresh" styleClass="nav-button"/>
+    </VBox>
+    <VBox style="-fx-background-color: #36393f; -fx-padding: 10;" prefWidth="200">
+        <Label text="所有用户" style="-fx-font-size: 14px; -fx-text-fill: white; -fx-padding: 5;" />
+        <ListView fx:id="allContactsList" style="-fx-background-color: #2f3136; -fx-text-fill: white;"
+                  onMouseClicked="#handleContactSelection"/>
+        <Label text="在线用户" style="-fx-font-size: 14px; -fx-text-fill: white; -fx-padding: 5;" />
+        <ListView fx:id="onlineContactsList" style="-fx-background-color: #2f3136; -fx-text-fill: white;"
+                  onMouseClicked="#handleContactSelection"/>
+    </VBox>
+    <VBox style="-fx-background-color: #ffffff; -fx-padding: 10;">
+        <ScrollPane fx:id="chatScrollPane" VBox.vgrow="ALWAYS" style="-fx-background-color: #ffffff;">
+            <VBox fx:id="dinaryBox" spacing="10"></VBox>
+        </ScrollPane>
+    </VBox>
+
+    <style>
+        .split-pane > .split-pane-divider {
+        -fx-padding: 0;
+        -fx-background-color: #36393f;
+        }
+    </style>
+</SplitPane>
+

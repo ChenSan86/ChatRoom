@@ -1,0 +1,74 @@
+.root {
+    -fx-background-color: linear-gradient(to bottom, #e8e8e8, #ffffff);
+    -fx-font-family: "Microsoft YaHei";
+}
+
+.button {
+    -fx-background-color: linear-gradient(to bottom, #4CAF50, #45A049);
+    -fx-text-fill: white;
+    -fx-font-size: 14px;
+    -fx-padding: 8 15 8 15;
+    -fx-background-radius: 10px;
+    -fx-border-radius: 10px;
+    -fx-cursor: hand;
+}
+
+.button:hover {
+    -fx-background-color: linear-gradient(to bottom, #45A049, #3E8E41);
+}
+
+.label {
+    -fx-text-fill: #333333;
+    -fx-font-size: 18px;
+    -fx-font-weight: bold;
+}
+
+.text-field {
+    -fx-background-color: #f9f9f9;
+    -fx-border-color: #cccccc;
+    -fx-border-radius: 5px;
+    -fx-padding: 5;
+}
+/* ///////////////////////////////////////////////////////////////////////////////////////*/
+
+.nav-button {
+    -fx-background-color: #5865f2;
+    -fx-text-fill: white;
+    -fx-font-size: 14px;
+    -fx-padding: 10;
+    -fx-border-radius: 5px;
+    -fx-background-radius: 5px;
+}
+
+.nav-button:hover {
+    -fx-background-color: #4752c4;
+}
+
+.nav-button graphic {
+    -fx-padding: 0;
+}
+
+.center {
+    -fx-pref-width: 250px;
+}
+
+.chat-box {
+    -fx-background-color: #ffffff;
+    -fx-padding: 10;
+}
+
+.text-field {
+    -fx-background-color: #ffffff;
+    -fx-text-fill: #000000;
+}
+
+.right {
+    -fx-pref-width: 450px;
+}
+.split-pane > .split-pane-divider {
+    -fx-background-color: #36393f;
+    -fx-border-color: #36393f;
+}
+/* ///////////////////////////////////////////////////////////////////////////////////////*/
+
+

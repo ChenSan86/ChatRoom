@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+
+<SplitPane xmlns="http://javafx.com/javafx" xmlns:fx="http://javafx.com/fxml"
+           fx:controller="com.chensan.client.viewFX.MainController" stylesheets="@style.css"
+           dividerPositions="0.1, 0.35">
+    <VBox spacing="20" alignment="CENTER" style="-fx-background-color: #2f3136; -fx-padding: 10;">
+        <Button text="退出登录" onAction="#logout" styleClass="nav-button"/>
+        <Button text="刷新" onAction="#handleRefresh" styleClass="nav-button"/>
+        <Button text="发送文件" onAction="#handleSendFile" styleClass="nav-button"/>
+        <Button text="收件箱" onAction="#handleReceiveFile" styleClass="nav-button"/>
+    </VBox>
+    <VBox style="-fx-background-color: #36393f; -fx-padding: 10;" prefWidth="200">
+        <Label text="所有联系人" style="-fx-font-size: 14px; -fx-text-fill: white; -fx-padding: 5;"/>
+        <ListView fx:id="allContactsList" style="-fx-background-color: #2f3136; -fx-text-fill: white;"
+                  onMouseClicked="#handleContactSelection"/>
+        <Label text="在线联系人" style="-fx-font-size: 14px; -fx-text-fill: white; -fx-padding: 5;"/>
+        <ListView fx:id="onlineContactsList" style="-fx-background-color: #2f3136; -fx-text-fill: white;"
+                  onMouseClicked="#handleContactSelection"/>
+        <Label text="群聊" style="-fx-font-size: 14px; -fx-text-fill: white; -fx-padding: 5;"/>
+        <ListView fx:id="groupChatList" style="-fx-background-color: #2f3136; -fx-text-fill: white;"
+                  onMouseClicked="#handleContactSelection"/>
+    </VBox>
+    <VBox style="-fx-background-color: #ffffff; -fx-padding: 10;">
+        <Label fx:id="contactNameLabel"
+               style="-fx-font-size: 16px; -fx-font-weight: bold; -fx-text-fill: #333; -fx-padding: 5;"/>
+        <TabPane fx:id="chatTabPane" VBox.vgrow="ALWAYS"/>
+        <HBox spacing="10" alignment="BOTTOM_LEFT">
+            <TextField fx:id="messageInput" promptText="输入消息..." HBox.hgrow="ALWAYS"/>
+            <Button text="发送" fx:id="sendButton" onAction="#handleSendMessage"/>
+        </HBox>
+    </VBox>
+
+    <style>
+        .split-pane > .split-pane-divider {
+        -fx-padding: 0;
+        -fx-background-color: #36393f;
+        }
+    </style>
+</SplitPane>
+

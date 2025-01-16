@@ -1,0 +1,79 @@
+.root {
+    -fx-background-color: linear-gradient(to bottom, #e8e8e8, #ffffff); /* 渐变背景 */
+    -fx-font-family: "Microsoft YaHei";
+}
+
+.button {
+    -fx-background-color: linear-gradient(to bottom, #4CAF50, #45A049); /* 绿色渐变按钮 */
+    -fx-text-fill: white;
+    -fx-font-size: 14px;
+    -fx-padding: 8 15 8 15;
+    -fx-background-radius: 10px; /* 圆角 */
+    -fx-border-radius: 10px;
+    -fx-cursor: hand; /* 鼠标悬停效果 */
+}
+
+.button:hover {
+    -fx-background-color: linear-gradient(to bottom, #45A049, #3E8E41); /* 悬停效果 */
+}
+
+.label {
+    -fx-text-fill: #333333;
+    -fx-font-size: 18px;
+    -fx-font-weight: bold; /* 加粗标签 */
+}
+
+.text-field {
+    -fx-background-color: #f9f9f9;
+    -fx-border-color: #cccccc;
+    -fx-border-radius: 5px;
+    -fx-padding: 5;
+}
+/* ///////////////////////////////////////////////////////////////////////////////////////*/
+/* 最左侧功能导航栏按钮 */
+.nav-button {
+    -fx-background-color: #5865f2;
+    -fx-text-fill: white;
+    -fx-font-size: 14px;
+    -fx-padding: 10;
+    -fx-border-radius: 5px;
+    -fx-background-radius: 5px;
+}
+
+/* 退出按钮图标样式 */
+.nav-button:hover {
+    -fx-background-color: #4752c4;
+}
+
+.nav-button graphic {
+    -fx-padding: 0;
+}
+
+/* 左侧导航栏和联系人列表 */
+.center {
+    -fx-pref-width: 250px; /* 调整左侧栏的宽度 */
+}
+
+/* 聊天区域 */
+.chat-box {
+    -fx-background-color: #ffffff;
+    -fx-padding: 10;
+}
+
+/* 消息输入框 */
+.text-field {
+    -fx-background-color: #ffffff;
+    -fx-text-fill: #000000;
+}
+
+/* 右侧聊天区 */
+.right {
+    -fx-pref-width: 450px; /* 增大右侧聊天区的宽度 */
+}
+.split-pane > .split-pane-divider {
+    -fx-background-color: #36393f;
+    -fx-border-color: #36393f;
+}
+/* ///////////////////////////////////////////////////////////////////////////////////////*/
+
+

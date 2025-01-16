@@ -1,0 +1,22 @@
+.nav-button {
+    -fx-background-color: #4caf50;
+    -fx-text-fill: white;
+    -fx-padding: 5 15;
+    -fx-font-size: 14px;
+    -fx-background-radius: 5;
+}
+
+.nav-button:hover {
+    -fx-background-color: #45a049;
+}
+
+.drag-drop-area {
+    -fx-border-color: #cccccc;
+    -fx-border-width: 2;
+    -fx-border-style: dashed;
+    -fx-background-color: #2f3136;
+    -fx-padding: 10;
+    -fx-text-fill: white;
+    -fx-font-size: 14px;
+    -fx-alignment: center;
+}

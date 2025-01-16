@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<VBox xmlns="http://javafx.com/javafx" xmlns:fx="http://javafx.com/fxml"
+      fx:controller="com.chensan.client.viewFX.RegisterController"
+      spacing="10" alignment="CENTER" prefWidth="800" prefHeight="600" stylesheets="@style.css">
+    <Label text="注册" styleClass="header-label"/>
+        <TextField fx:id="idField" promptText="请输入账号"/>
+        <PasswordField fx:id="pwdField" promptText="请输入密码"/>
+    <Label fx:id="messageLabel" styleClass="error-label"/>
+    <HBox spacing="10" alignment="CENTER">
+        <Button text="注册" onAction="#handleRegister"/>
+        <Button text="返回" onAction="#showLogin"/>
+    </HBox>
+</VBox>
