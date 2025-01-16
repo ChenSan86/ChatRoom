@@ -29,9 +29,9 @@
 
 ## 运行入口
 
-*Cilent： com/chensan/client/viewFX/ViewStartFX.java*
-*Server： com/chensan/server/wechatframe/WeChatServerStart.java*
-Server（无界面版）： com/chensan/server/wechatframe/WechatFrame.java
+- *Cilent： com/chensan/client/viewFX/ViewStartFX.java*
+- *Server： com/chensan/server/wechatframe/WeChatServerStart.java*
+- Server（无界面版）： com/chensan/server/wechatframe/WechatFrame.java
 
 ***
 
