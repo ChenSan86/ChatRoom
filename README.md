@@ -18,7 +18,7 @@
 
 ***
 
-##运行前修改
+## 运行前修改
 
 - ClientFX：com/chensan/client/service/UserService.java
   - *修改Server IP：SERVER_IP*
@@ -27,7 +27,7 @@
 - ServerFX: com/chensan/server/service/WechatServer.java
   - *修改文件地址（源码采用绝对地址）*
 
-##运行入口
+## 运行入口
 
 *Cilent： com/chensan/client/viewFX/ViewStartFX.java*
 *Server： com/chensan/server/wechatframe/WeChatServerStart.java*
@@ -35,7 +35,7 @@ Server（无界面版）： com/chensan/server/wechatframe/WechatFrame.java
 
 ***
 
-大一大作业，第一次写代码，规范是没有的，shi是一堆一堆的，还请各位大佬批评指正
+大一上java大作业，作者没有代码经验，该请各位大佬批评指正
 
 
 
